@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Conditional Endorsement</title>
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="div-left" class="div-margin">
+            <p id="p-Dis">....</p>
+        </div>
+
+
+
+
+
+        <div id="div-paper">
+
+            <h1 id="h-title">Endorsement Theory</h1>
+
+            <h6 id="h-title-info"><small>Ali Zolfagharian - 'What If' Research Group - Konstanz University -
+                    2019</small> </h6>
+
+            <div id='Section-intro' class='div-section'>
+                <p class="p-main">
+                    Endorsement theory, ET, is a formal epistemological theory which represents an epistemic state of an
+                    agent by an acceptance base function (ABF),
+                    an endorsement critical point (ECP), and an endorsement function (EF). ABF, ECP, and EF respectively
+                    depend on agent’s evidence, context and reasons.
+                </p>
+                <p class="p-main">
+                    The static ET ends by representing qualitative and quantitative doxastic attitudes, namely; belief,
+                    disbelief, suspense and ignorance.
+                    For the dynamic part, I explain how an agent can update her acceptance base function, endorsement
+                    threshold and her way of constructing the endorsement function.
+                </p>
+                <p class="p-main">
+                    The last part is about conditionals and reason. Conditional degree of endorsement of proposition,
+                    depends on the given condition, a condition could be change in the acceptance base.
+                    Reason on the other side is about comparing how a condition can change the degree of endorsement of
+                    the
+                    proposition and its complement.
+                </p>
+            </div>
+            <div id="table-of-content" class='div-section'>
+                <ul>
+                    <li><a href="#Preliminary-definitions-and-notation" id="">Preliminary definitions and notation</a>
+                        <ul>
+                            <li><a href="#Set-of-possibilities-and-propositions" id="">Set of possibilities and
+                                    propositions</a></li>
+                            <li><a href="#Frames-and-ground" id="">Frames and ground</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Acceptance-Base-Fucntion" id="">Acceptance Base Fucntion</a>
+                        <ul>
+                            <li><a href="#Evidence" id="">Evidence</a></li>
+                            <li><a href="#Forming-An-Acceptance-Base-Function" id="">Evidence Base Function</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Endorsement-Fucntion" id="">Endorsement Fucntion</a>
+                        <ul>
+                            <li><a href="#Endorsement-Threshold" id="">Endorsement Threshold</a></li>
+                            <li><a href="#Endorsement-Base" id="">Endorsement Base</a></li>
+                            <li><a href="#Inferable-Bases-and-cores" id="">Inferable Bases and cores</a></li>
+                            <li><a href="#Conditionally-Endorsed-propositions" id="">Conditionally Endorsed
+                                    propositions</a></li>
+                            <li><a href="#Conditionally Evaluable propositions" id="">Conditionally Evaluable
+                                    propositions</a></li>
+                            <li><a href="#Evaluable-propositions" id="">Evaluable propositions</a></li>
+                            <li><a href="#Endorsed-propositions" id="">Endorsed propositions</a></li>
+                            <li><a href="#Endorsement-function" id="">Endorsement function</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Doxastic-attitudes" id="">Doxastic attitudes</a>
+                        <ul>
+                            <li><a href="#Belief" id="">Belief (l/n)</a></li>
+                            <li><a href="#Disbelief" id="">Disbelief (l/n)</a></li>
+                            <li><a href="#Suspension" id="">Suspension (l/n)</a></li>
+                            <li><a href="#Ignorance" id="">Ignorance (l/n)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Update" id="">Update</a>
+                        <ul>
+                            <li><a href="#Acceptance-Base-Function-Update" id="">Acceptance Base Function Update</a>
+                            </li>
+                            <li><a href="#Endorsement-Critical-Point-Update" id="">Endorsement Critical Point Update</a>
+                            </li>
+                            <li><a href="#Update-in-The-Construction-of-the-Endorsement-function" id="">Update in the Construction of the
+                                    Endorsement function</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Conditionals" id="">Conditionals</a>
+                        <ul>
+                            <li><a href="#By-endorsing-not-endorsing" id="">By endorsing/not endorsing</a></li>
+                            <li><a href="#By-Believing" id="">By Believing</a></li>
+                            <li><a href="#By-Disbelieving" id="">By Disbelieving</a></li>
+                            <li><a href="#By-Assuming-Unknown" id="">By Assuming Unknown</a></li>
+                            <li><a href="#By-Suspending" id="">By Suspending</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Reasons" id="">Reasons</a>
+                        <ul>
+                            <li><a href="#For-The-Agent" id="">For The Agaent</a></li>
+                            <li><a href="#For-Another-Agent" id="">For Another Agent</a></li>
+                            <li><a href="#For-A-Group-Of-Agents" id="">For A Group Of Agents</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="main-texts">
+                <div id='Section-Preliminary-definitions-and-notation' class='div-section'>
+                    <a id="Preliminary-definitions-and-notation"><b>Preliminary definitions and notation</b></a>
+                    <section id='section-Set-of-possibilities-and-propositions'>
+                        <a id="Set-of-possibilities-and-propositions">
+                            Set of possibilities and propositions
+                        </a>
+                        <p class="p-main">Let <span>W</span> be the set of all possibilities and <span>n</span> be the
+                            number
+                            of all possibilities.
+                            Then <span>P<sub>i</sub> ⊆ W</span> is a proposition, a set of possibilities;
+                            such that the subscript <span>i</span> is a decimal number which its binary form indicates
+                            which
+                            possibilities are in <span>P<sub>i</sub></span>. The notation, using subscript
+                            <span>i</span>,
+                            improves the readability of the text and
+                            it is easy to use this notation for a programming language like bitwise operator.
+                            Also, it reflects the definition of a proposition, a function from the set of possibilities
+                            to
+                            <span>{0,1}</span>.
+                        </p>
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (1) <span> W = { w <sub>1</sub> , w<sub>2</sub> ,…, w<sub>n</sub> } </span>
+                                </li>
+                            </ul>
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (2) <span> P<sub>i</sub> ⊆ W </span>
+                                </li>
+                            </ul>
+                        <p class="p-main">
+                            Let me explain with an example:
+                            Assume <span>W={ w<sub>1</sub> , w<sub>2</sub> , w<sub>3</sub> , w<sub>4</sub> }</span>,
+                            then the
+                            proposition <span>W</span> is <span>P<sub>15</sub></span> which is
+                            <span>P<sub>(1111)</sub></span>,
+                            the number <span>1111</span>
+                            tells that all possibilities <span>w<sub>1,</sub>, w<sub>2,</sub>, w<sub>3,</sub>,
+                                w<sub>4</sub></span> belongs to <span>P<sub>15</sub></span>. Similarly,
+                            <span>P<sub>5</sub> ≡ P<sub>(0101)</sub></span>
+                            which tells that <span>P<sub>5</sub></span> contains <span>w<sub>1,</sub>,
+                                w<sub>3</sub></span>. And <span>P<sub>0</sub></span> means the empty set.
+                        </p>
+                    </section>
+                    <section id="section-Frames-and-ground">
+                        <a id="Frames-and-ground">
+                            Frames and ground
+                        </a>
+                        <p class="p-main">
+                            The set of frames <span>F<sub></sub></span> is the set of all algebra over
+                            <span>W<sub></sub></span>.
+                            <span>F<sub>i</sub></span> is a subset of <span>F<sub></sub></span>, that all its
+                            member contains <span>P<sub>i</sub></span>. In other word <span>F<sub>i</sub></span> is
+                            the set of all algebra
+                            over <span>W<sub></sub></span> which have <span>P<sub>i</sub></span> as
+                            its member. An algebra could be thought as an inner context or a framework that has enough
+                            position to receive evidences. There might be cases that the inner context needs to be
+                            updated. Let <span>F</span> be <span> { B<sub>i</sub> | B<sub>i</sub> is an algebra and a subset of
+                                2<sup>W</sup> } </span> then
+                        </p>
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (3) <span>F<sub>i</sub> | ( F<sub>i</sub> ⊆ F ) ∧ ( P<sub>i</sub> ∈ F<sub>i</sub> )</span>
+                                </li>
+                            </ul>
+                        <p class="p-main">
+                            The set of grounds <span>G<sub></sub></span> are the set of sets <span>S<sub></sub></span> such that each
+                            <span>S<sub></sub></span>,
+                            is a set of propositions and if it had more than one element then it has three properties: I) The intersection members of any
+                            subset of <span>S<sub></sub></span> does not
+                            belong to <span>S<sub></sub></span>. II) The intersection of all members of
+                            <span>S<sub></sub></span> is not the empty set. Let the
+                            intersection of members of <span>S<sub></sub></span>, be called a core. The set of all cores is the set of all propositions as well. III. There is no subset of 
+                            <span>S</span> with the same core.
+
+                        </p>
+                        <p class="p-main">
+                            Each member of <span>G<sub></sub></span> for the set of all proposition
+                            <span>2<sup>W</sup></span>, could be called a prime ground for the set of all grounds
+                            . <span>G<sub>i</sub></span> is a subset of <span>G<sub></sub></span> that
+                            contains
+                            all <span>S<sub></sub></span> in <span>G<sub></sub></span>
+                            that <span>P<sub>i</sub></span> is the core or
+                            a superset of the core of <span>S<sub></sub></span>.
+                        </p>
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (4)<span> G<sub>i</sub> = { S<sub>i</sub> | S<sub>i</sub> ⊆
+                                        2<sup>W</sup>, &#x2229;S &#x2286; P<sub>i</sub> } </span>
+                                </li>
+                            </ul>
+                    </section>
+
+
+                </div>
+
+                <div id='Section-Acceptance-Base-Fucntion' class='div-section'>
+                    <a id="#Acceptance-Base-Fucntion"><b>Acceptance Base Fucntion</b></a>
+                    <section id="section-Evidence">
+                        <a id="Evidence">Evidence</a>
+                        <p class="p-main">
+                            A peace of evidence changes epistemically agent’s degree of acceptance. A piece of evidence
+                            about <span>P<sub>i</sub></span> changes the
+                            acceptance degree of <span>P<sub>i</sub></span>. Notice that accepting a proposition at some
+                            degree does not mean
+                            that the agent necessarily uses that proposition for reasoning.
+                        </p>
+                    </section>
+
+                    <section id="section-Forming-An-Acceptance-Base-Function">
+                        <a id="Evidence">Evidence</a>
+                        <p class="p-main">
+                            An acceptance base function <span>δ</span> is a function from
+                            <span>2<sup>W</sup></span> to <span>[0,1]</span> or
+                            <span>δ: 2<sup>W</sup> → [0,1]</span> such that
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (5) <span> δ ( ∅ ) = 0 </span>
+                            </li>
+                        </ul>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (6) <span> δ ( W ) = 1 </span>
+                            </li>
+                        </ul>
+
+                        <p class="p-main">
+
+
+                        This function assigns <span>0</span> if the
+                        agent does not have evidence in
+                        favor of the proposition and assign a number from <span>(0,1]</span> if she has evidence.
+                        For combining <span>n</span> pieces of evidence which are in favor of
+                        a proposition like <span>P<sub>i</sub>
+                        </span> and each piece of evidence supports
+                        <span>P<sub>i</sub>
+                        </span> with a certain degree of acceptance <span>E <sup>j</sup></span> ,
+                        one can use the
+                        following rule of combination:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (7) <span> δ ( P <sub>i</sub> ) = <span class='span-big-class'>∑</span>
+                                    <sub><small>I⊆{E<sup>1</sup>,E<sup>2</sup>,...E<sup>n</sup>} </small></sub> (-1)
+                                    <sup>|I|+1</sup>
+                                    <span class='span-big-class'> &prod;</span> <small> <sub>E <sup>j</sup>&#x220A;
+                                            I</sub> </small> E <sup>j</sup> </span>
+                            </li>
+                        </ul>
+                        For two pieces of evidence <span>E <sup>1</sup>=0.4</span> and
+                        <span>E <sup>1</sup>=0.8</span>, the result is
+                        <span>δ(P <sup>i</sup> = E<sup>1</sup> + E<sup>2</sup> - E<sup>1</sup> &#xd7; E<sup>2</sup> =
+                            E<sup>1</sup> +
+                            E<sup>2</sup> (1 - E<sup>1</sup>) = 0.4 + 0.48 =0.88</span>.
+                        It means each piece of evidence increase the percentage of the
+                        remaining degree of acceptance.
+                        <p class="p-main">
+                            If a proposition does not have evidential
+                            support, then its degree of base acceptance
+                            is <span>0</span>. The acceptance base function reflects
+                            evidence or data before the data processing.
+                        </p>
+                    </section>
+                </div>
+
+                <div id='Section-Endorsement-Fucntion' class='div-section'>
+                    <a id="Endorsement-Fucntion"><b>Endorsement Fucntion</b></a>
+                    <section id="section-Endorsement-Threshold">
+                        <a id="Endorsement-Threshold" id="">Endorsement Threshold</a>
+                        <p class="p-main">
+                            An endorsement threshold is a number <span>Cr</span> in <span>[0,1]</span>,
+                            that the agent endorses a proposition if its acceptance
+                            base is more than <span>Cr</span>. An agent might have different threshold
+                            in different context.
+                        </p>
+                    </section>
+
+                    <section id="section-Endorsement-Base">
+                        <a id="Endorsement-Base">Endorsement Base</a>
+                        <p class="p-main">
+                            The set <span>H</span> of all propositions that their degree of base acceptance is
+                            equal to or more than the threshold is the endorsement base. The agent
+                            uses elements of <span>H</span> as the foundation of her reasoning and endorsement:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (8) <span> H = { P <sub>i</sub> | δ ( P <sub>i</sub> ) &#x2265; Cr } </span>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section id="section-Inferable-Bases-and-cores">
+                        <a id="Inferable-Bases-and-cores">Inferable Bases and cores</a>
+                        <p class="p-main">
+                            A set <span>H<sub>i</sub></span> is an inferable base if it is consistent and contain all
+                            propositions
+                            in <span>H</span> that they are compatible with <span>H<sub>i</sub></span>.
+                            In other words, an inferable base is one of
+                            the largest consistent subsets of <span>H</span>. The subscription
+                            of <span>H<sub>i</sub></span> shows that the intersection of all propositions in
+                            <span>H<sub>i</sub></span> is <span>P<sub>i</sub> = <span id=""
+                                    class="span-big-class">⋂</span><sub><small>P<sub>k</sub> &#8712;
+                                        <span>H<sub>i</sub></span></small></sub>P<sub>k</sub></span>.
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (9) <span> H <sub>i</sub> ⊆ H </span>
+                            </li>
+                            <li type="none">
+                                (10) <span> P <sub>i</sub> &#x2260; ∅ </span>
+                            </li>
+                            <li type="none">
+                                (11) <span> &#x2200; P<sub>k</sub> &#x2208; H (P<sub>i</sub> &#x2229;
+                                    P<sub>k</sub>&#x2260; ∅ → P <sub>k</sub>∈ H<sub>i</sub>)</span>
+                            </li>
+                        </ul>
+
+                        <p class="p-main">
+                            For example, if <span>|W|=4</span> and
+                            <span>H = { P<sub>2</sub>, P<sub>3</sub>, P<sub>10</sub>, P<sub>12</sub> }</span>,
+                            then <span>H = { P<sub>2</sub>, P<sub>3</sub>, P<sub>10</sub>, P<sub>12</sub> }</span> is not an
+                            inferable base because
+                            its core is <span>P<sub>0</sub></span>; and also the set <span>{ P<sub>2</sub> ,
+                                P<sub>10</sub> }</span> is not an inferable base
+                            because it is not the largest consistent subset of <span>H</span> and
+                            by adding <span>P<sub>3</sub></span> still its core is not the empty set. The
+                            inferable bases of <span>H</span> are: <span>H<sub>2</sub>={ P<sub>2</sub> ,P<sub>3</sub> ,P
+                                <sub>10</sub> }</span> and
+                            <span>H<sub>8</sub>={ P <sub>10</sub>, P <sub>12</sub> }</span>
+                            and their corresponding core are respectively <span>P<sub>2</sub></span> and
+                            <span>P<sub>8</sub></span>.
+                        </p>
+
+                    </section>
+                    <section id="section-Conditionally-Endorsed-propositions">
+                        <a id="Conditionally-Endorsed-propositions">Conditionally Endorsed propositions</a>
+                        <p class="p-main">
+                            A proposition <span>P<sub>j</sub></span> is endorsed in an inferable base
+                            <span>H<sub>i</sub></span> if and only if <span>P<sub>i</sub> ⊆ P<sub>j</sub></span>.
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (12) <span> End ( P<sub>i</sub> | H<sub>i</sub> ) &#x2261; P<sub>i</sub> ⊆
+                                        P<sub>j</sub> </span>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="p-main">
+                            <span> End ( P<sub>i</sub> | H<sub>i</sub> )</span> means if the agent derives
+                            propositions based on <span>H<sub>i</sub></span> then <span>P<sub>j</sub></span> is
+                            endorsed.
+                            End is the qualitative
+                            or binary endorsement. A proposition in a given inferable base is endorsed
+                            or is not endorsed. If it is endorsed, then its complement is not endorsed.
+                            If it is not endorsed, then its complement is endorsed or is not endorsed.
+                        </p>
+                    </section>
+
+                    <section id="section-Conditionally-Evaluable-propositions">
+                        <a id="Conditionally-Evaluable-propositions">Conditionally Evaluable propositions</a>
+                        <p class="p-main">
+                            Let <span>¬P<sub>j</sub></span> be W - <span>P<sub>j</sub></span>. A proposition
+                            <span>P<sub>j</sub></span> is evaluable in an inferable base <span>H<sub>i</sub></span> if
+                            and
+                            only if <span>P<sub>i</sub> ⊆ P<sub>j</sub></span> or <span>P<sub>i</sub> ⊆
+                                ¬P<sub>j</sub></span>. As the core of an inferable base is not the empty set,
+                            a proposition and its complement cannot be endorsed in an inferable base at the same time.
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (13) <span>Eva( P<sub>j</sub> | H<sub>i</sub> ) ≡ P<sub>i</sub> ⊆ P<sub>j</sub> or
+                                    P<sub>i</sub> ⊆ ¬P<sub>j</sub></span>
+                            </li>
+                        </ul>
+                        <p class="p-main">
+                            <span>Eva( P<sub>j</sub> | H<sub>i</sub> )</span> means then <span>P<sub>j</sub></span> is
+                            decidable in <span>H<sub>i</sub></span>. If a proposition
+                            is evaluable in the inferable base <span>H<sub>i</sub></span>, then the proposition
+                            or its complement is endorsed in <span>H<sub>i</sub></span>. Therefore:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (14) <span>Eva( P<sub>j</sub> | H<sub>i</sub> ) ≡ Eva( ¬P<sub>j</sub> | H<sub>i</sub> )
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="section-Evaluable-propositions">
+                        <a id="Evaluable-propositions">Evaluable propositions</a>
+                        <p class="p-main">
+                            A proposition <span>P<sub>j</sub></span> given <span>H</span>; the endorsement base,
+                            is evaluable, if and only if it is conditionally evaluable in all inferable bases of
+                            <span>H</span>.
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (15) <span>Eva( P<sub>j</sub> ) ≡ Eva( P<sub>j</sub> | H ) ≡ ∀ H<sub>i</sub> Eva(
+                                    P<sub>j</sub> | H<sub>i</sub> ) </span>
+                            </li>
+                        </ul>
+                        <p class="p-main">
+                            The set of all evaluable propositions; <span>V</span>, is an algebra. Its proof is simple.
+                            For every
+                            evaluable proposition its complement is evaluable (14). And the union (and intersection) of
+                            two evaluable propositions are evaluable (13). So, V is an algebra.
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (16) <span>V ≡ { P<sub>j</sub> | Eva( P<sub>j</sub> ) } </span>
+                            </li>
+                            <li type="none">
+                                (17) <span> V ∈ F </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="section-Endorsed-propositions">
+                        <a id="#Endorsed-propositions">Endorsed propositions</a>
+                        <p class="p-main">
+                            A proposition <span>P<sub>j</sub></span> given <span>H</span>; the endorsement base, is endorsed, if and only if it is evaluable
+                            and it is conditionally endorsed in at least one inferable base of <span>H</span>.
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (18) <span> End(P<sub>j</sub> ) ≡ End(P<sub>j</sub> | H) ≡ Eva(P<sub>j</sub> ) ∧ ∃ H<sub>i</sub> End (P<sub>j</sub> | H<sub>i</sub> )  </span>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section id="section-Endorsement-function">
+                        <a id="Endorsement-function">Endorsement function</a>
+                        <p class="p-main">
+                            Endorsement Function gives a degree of endoresement to a proposition and it represents the
+                             quantitative notion of endorsement. The degree of endorsement of a proposition is 
+                            the maximum degree of support that it could be received from an inferable base. In other words,
+                            the degree of endorsement, should be assigned based on the best consistent argument that an
+                            agent with <span>H</span> as her endorsement base could give.    
+                            <span><sub></sub></span>
+                        </p>
+                        <p class="p-main">
+                            Every proposition has a set of possible grounds <span>G<sub>i</sub></span>. Let 
+                             <span>G<sub>i</sub><sup>S</sup></span>, be the set of all possible grounds of <span>P<sub>i</sub></span>
+                             such that every proposition in the elements of the sets in <span>G</span>, is an element of <span>S</span>.
+                             Then, <span>G<sub>i</sub><sup>S</sup></span> is the set of grounds for <span>P<sub>i</sub></span> that could 
+                             are provioded by <span>S</span>. Now, <span>G<sub>i</sub><sup>H</sup></span> means all grounds that could be
+                             provided for <span>P<sub>i</sub></span> based on the Endorsement Base. In the same way, 
+                             <span>G<sub>i</sub><sup>H<sub>j</sub></sup></span> is the set of all grounds for <span>P<sub>i</sub></span>
+                             which an inferable base could provide. If we consider every ground <span>S</span>, which is a set of propositions, in <span>H<sub>j</sub></span> as an evidential
+                              support for <span>P<sub>i</sub></span> provided by <span>H<sub>j</sub></span>, then the degree of endorsement, <span>End<sup>o</sup></span>, 
+                              that it gives to <span>P<sub>i</sub></span> is the following:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (19) <span> End<sup>o</sup>( P<sub>i</sub> | S ) = min {δ ( P<sub>j</sub> ) | P<sub>j</sub> ∈ S }</span>
+                            </li>
+                        </ul>
+                        <p class="p-main">
+                        The reason that we need a minimum function, is that the ground is as supportive as its weakest proposition. In our daily life, when we 
+                        hear an argument that one of its assumptions is not acceptable or is weakly acceptable, we think the whole argument is weak as well. Notice
+                         that the minimum for all grounds in <span>G<sub>i</sub><sup>H</sup></span> is more than the endorsement threshold, and it means if the ground
+                          is provided by <span>H</span> then it is gives aminimum more than the threshold.
+                        </p>
+                        <p class="p-main">
+                        For calculating the degree of evidential support from a set of grounds <span>G<sub>i</sub><sup>H<sub>j</sub></sup></span>, one can aggregate all
+                         supports from various grounds by using the following formula:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (20) <span> End<sup>o</sup>( P<sub>i</sub> | H<sub>j</sub> ) = <span class='span-big-class'>∑</span>
+                                <sub><small>I⊆<span>G<sub>i</sub><sup>H<sub>j</sub></sup></span> </small></sub> (-1)
+                                <sup>|I|+1</sup>
+                                <span class='span-big-class'> &prod;</span> <small> <sub>S <sup>j</sup>&#x220A;
+                                        I</sub> </small> End<sup>o</sup>( S<sub>j</sub> ) </span>
+                            </li>
+                        </ul>
+                        <p class="p-main">
+                        The above formula works like the evidential support formula that we used for the acceptance base function. Now, we are able to make the endorsement function <span> End<sup>o</sup>( P<sub>i </sub>) or
+                             End<sup>o</sup>( P<sub>i</sub> | H ) </span>:
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (21) <span> End<sup>o</sup>( P<sub>i</sub> ) = max { End<sup>o</sup>(P<sub>i</sub> | H<sub>j</sub> ) | for all H<sub>j</sub> } </span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div id='Section-Doxastic-attitudes' class='div-section'>
+                    <a id="Doxastic-attitudes"><b>Doxastic attitudes</b></a>
+                    <section id="section-Belief">
+                        <a id="Belief">Belief</a>
+                        <p class="p-main">
+                            A proposition is believed if and only if it is endorsed and its negation is not endorsed:
+                            <span><sub></sub></span>
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (22) <span> Bel<sup>o</sup>( P<sub>i</sub> ) = End( P<sub>i</sub> ) ∧ ¬End( ¬P<sub>i</sub> ) </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="section-Disbelief">
+                        <a id="Disbelief">Disbelief</a>
+                        <p class="p-main">
+                            A proposition is disbelieved if and only if its negation is believed:
+                            <span><sub></sub></span>
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (23) <span> Dis<sup>o</sup>( P<sub>i</sub> ) = Bel<sup>o</sup>( ¬P<sub>i</sub> ) </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="section-Suspension">
+                        <a id="Suspension">Suspension</a>
+                        <p class="p-main">
+                            A proposition is suspended if and only if the proposition and its negation are both endorsed:
+                            <span><sub></sub></span>
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (24) <span> Sus<sup>o</sup>( P<sub>i</sub> ) = End( P<sub>i</sub> ) ∧ End( ¬P<sub>i</sub> ) </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="section-Ignorance">
+                        <a id="Ignorance">Ignorance</a>
+                        <p class="p-main">
+                            A proposition is unknown if and only if it is endorsed and its negation is not endorsed:
+                            <span><sub></sub></span>
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (25) <span> Ign<sup>o</sup>( P<sub>i</sub> ) = ¬End( P<sub>i</sub> ) ∧ ¬End( ¬P<sub>i</sub> ) </span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div id='Section-Update' class='div-section'>
+                    <a id="Update"><b>Update</b></a>
+                    <section id="section-Acceptance-Base-Function-Update">
+                        <a id="Acceptance-Base-Function-Update">Acceptance Base Function Update</a>
+                        <p class="p-main">
+                            As per changes in the evidential support of propositions, one can update the acceptance base function by 
+                            considering its restriction (5) and (6), and by using the rule of combination. This update, is natural, as we 
+                            do in daily life. The revision in the acceptance function, necessitates the re-calculation of endorsement function as well. 
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+
+                    <section id="section-Endorsement-Critical-Point-Update">
+                        <a id="Endorsement-Critical-Point-Update">Endorsement Critical Point Update</a>
+                        <p class="p-main">
+                            Updating the critical point, means assigning new number between <span>0</span> and <span>1</span>. After the update, the acceptance function
+                            does not need to be re-calculated, but the endorsement function needs re-calculation. The motivations for the update of the critical point 
+                            might be based on some practical or epistemological reasons. 
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+
+                    <section id="section-Update-in-The-Construction-of-the-Endorsement-function">
+                        <a id="Update-in-The-Construction-of-the-Endorsement-function">Update in the Construction of the
+                            Endorsement function</a>
+                        <p class="p-main">
+                            The logic of deduction, could be updated as well, if an agent does not accept the classic logic. Also, an agent could change the norms for
+                            making inferable sets. A change in logic, necessitates re-calculation of endorsement function.
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                </div>
+
+                <div id='Section-Conditionals' class='div-section'>
+                    <a id="Conditionals"><b>Conditionals</b></a>
+                    <section id="section-">
+                        <a id="Conditionals-By-endorsing-not-endorsing">By assuming endorsed/not endorsed</a>
+                        <p class="p-main">
+                            If an agent has endorsed a propostion, by assuming endorsed, her endorsement function, will not change. 
+                            If the proposition is not endorsed, then she can endorse it by assiging <span>Cr</span> as its degree of acceptance.
+                            Then she should update her endorsement function again. In this case, one can call it 'conditioning by assuming endorsed'.
+                            <span><sub></sub></span>
+                        </p>
+                        <p class="p-main">
+                            One can say that another option for the agent might be decreasing her critical point if it helps endorsing the proposition. In this case there 
+                            is no act of assumption, but the agent only change what still epistemically is acceptable. What is important here, is the first case. Update of the 
+                            threshold might have many reasons and endorsing a proposition is one of many possible reasons.
+                        </p>
+
+                        <p class="p-main">
+                            If an agent likes to see what happens if she stops endorsing a propostion which she endorses already, then
+                            she needs to look at every grounds of the proposition which is provided by the endorsement base, then she should assing a number less 
+                            than the critical point to the proposition with minimum degree of acceptance in every ground. Then she could avoid 
+                            all arguments that make the propostion endorsed.
+                        </p>
+
+                    </section>
+                    <section id="section-">
+                        <a id="By-Believing">By Believing</a>
+                        <p class="p-main">
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                    <section id="section-">
+                        <a id="By-Disbelieving">By Disbelieving</a>
+                        <p class="p-main">
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                    <section id="section-">
+                        <a id="By-Assuming-Unknown">By Assuming Unknown</a>
+                        <p class="p-main">
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                    <section id="section-">
+                        <a id="By-Suspending">By Suspending</a>
+                        <p class="p-main">
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id='Section- ' class='div-section'>
+                    <a id=" qqq "><b> qwqqwerewrew </b></a>
+                    <section id="section-">
+                        <a id="qwe">qwewqe</a>
+                        <p class="p-main">
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="div-right" class="div-margin">
+            <p id="p-Dis">....</p>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
