@@ -100,17 +100,19 @@
                             <li><a href="#By-Disbelieving" id="">By Disbelieving</a></li>
                             <li><a href="#By-Assuming-Unknown" id="">By Assuming Unknown</a></li>
                             <li><a href="#By-Suspending" id="">By Suspending</a></li>
+                            <li><a href="#conditional-endorsement" id="">Conditional Endorsement</a></li>
                         </ul>
                     </li>
                     <li><a href="#Reasons" id="">Reasons</a>
                         <ul>
-                            <li><a href="#For-The-Agent" id="">For The Agaent</a></li>
-                            <li><a href="#For-Another-Agent" id="">For Another Agent</a></li>
-                            <li><a href="#For-A-Group-Of-Agents" id="">For A Group Of Agents</a></li>
+                            <li><a href="#various-kinds-of-reasons" id="">Various Kinds of Reasons</a></li>
                         </ul>
+                    </li>
+                    <li><a href="#References" id="">References</a>
                     </li>
                 </ul>
             </div>
+
             <div id="main-texts">
                 <div id='Section-Preliminary-definitions-and-notation' class='div-section'>
                     <a id="Preliminary-definitions-and-notation"><b>Preliminary definitions and notation</b></a>
@@ -491,11 +493,12 @@
                         </ul>
                         <p class="p-main">
                         The above formula works like the evidential support formula that we used for the acceptance base function. Now, we are able to make the endorsement function <span> End<sup>o</sup>( P<sub>i </sub>) or
-                             End<sup>o</sup>( P<sub>i</sub> | H ) </span>:
+                             End<sup>o</sup>( P<sub>i</sub> | H ) </span>: <b> (maybe Aggr is a better fomulation again)</b>
                         </p>
                         <ul class='ul-formula'>
-                            <li type="none">
+                            <li type="none"> 
                                 (21) <span> End<sup>o</sup>( P<sub>i</sub> ) = max { End<sup>o</sup>(P<sub>i</sub> | H<sub>j</sub> ) | for all H<sub>j</sub> } </span>
+                                
                             </li>
                         </ul>
                     </section>
@@ -591,10 +594,15 @@
                     <section id="section-">
                         <a id="Conditionals-By-endorsing-not-endorsing">By assuming endorsed/not endorsed</a>
                         <p class="p-main">
-                            If an agent has endorsed a propostion, by assuming endorsed, her endorsement function, will not change. 
+                            <b>Assuming endorsed.</b> If an agent has endorsed a propostion, by assuming endorsed, her endorsement function, will not change. 
                             If the proposition is not endorsed, then she can endorse it by assiging <span>Cr</span> as its degree of acceptance.
                             Then she should update her endorsement function again. In this case, one can call it 'conditioning by assuming endorsed'.
                             <span><sub></sub></span>
+                            <ul class='ul-formula'>
+                                <li type="none">
+                                    (26) <span> End<sup>o</sup>( .<sub></sub> | End<sup>o</sup>( P<sub>i</sub> ) ) = End<sup>o</sup>( .<sub></sub> | <sub> δ( P<sub>i</sub> ) = Cr </sub> ) </span>
+                                </li>
+                            </ul>
                         </p>
                         <p class="p-main">
                             One can say that another option for the agent might be decreasing her critical point if it helps endorsing the proposition. In this case there 
@@ -603,67 +611,116 @@
                         </p>
 
                         <p class="p-main">
-                            If an agent likes to see what happens if she stops endorsing a propostion which she endorses already, then
+                            <b>Assuming not endorsed.</b>If an agent likes to see what happens if she stops endorsing a propostion which she endorses already, then
                             she needs to look at every grounds of the proposition which is provided by the endorsement base, then she should assing a number less 
                             than the critical point to the proposition with minimum degree of acceptance in every ground. Then she could avoid 
-                            all arguments that make the propostion endorsed.
+                            all arguments that make the propostion endorsed. Let <span>G<sub>i</sub> </span> be the set of all ground of <span>P<sub>i</sub> </span>:
                         </p>
-
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (27) <span> End<sup>o</sup>( .<sub></sub> | ¬End<sup>o</sup>( P<sub>i</sub> ) ) = End<sup>o</sup>( .<sub></sub> | <sub> δ( P<sub>j</sub>  ) = 0 if  P<sub>j</sub> ∈ S (∈ G<sub>j</sub> ) ∧ (∀ P<sub>j</sub>∈ G<sub>j</sub>) (δ(P<sub>j</sub> ) ≤ δ(P<sub>k</sub> ))    </sub> ) </span>
+                            </li>
+                        </ul>
                     </section>
-                    <section id="section-">
+                    <section id="section-By-Believing">
                         <a id="By-Believing">By Believing</a>
                         <p class="p-main">
+                            Assuming that <span>P<sub>i</sub></span> is believed is equal to assume that <span>P<sub>i</sub></span> is endorsed (26) and <span>¬P<sub>i</sub></span> is not endorsed (27). 
                             <span><sub></sub></span>
                         </p>
                     </section>
-                    <section id="section-">
+                    <section id="section-By-Disbelieving">
                         <a id="By-Disbelieving">By Disbelieving</a>
                         <p class="p-main">
+                            Assuming that <span>P<sub>i</sub></span> is disbelieved is equal to assume that <span>P<sub>i</sub></span> is believed. 
                             <span><sub></sub></span>
                         </p>
                     </section>
-                    <section id="section-">
+                    <section id="section-By-Assuming-Unknown">
                         <a id="By-Assuming-Unknown">By Assuming Unknown</a>
                         <p class="p-main">
+                            Assuming that <span>P<sub>i</sub></span> is unknown is equal to assume that <span>P<sub>i</sub></span> and <span>¬P<sub>i</sub></span> are not both endorsed (27).
                             <span><sub></sub></span>
                         </p>
                     </section>
-                    <section id="section-">
+                    <section id="section-By-Suspending">
                         <a id="By-Suspending">By Suspending</a>
                         <p class="p-main">
+                            Assuming that <span>P<sub>i</sub></span> is suspended is equal to assume that <span>P<sub>i</sub></span> and <span>¬P<sub>i</sub></span> are both endorsed (26).
+                            <span><sub></sub></span>
+                        </p>
+                    </section>
+                    <section id="section-conditional-endorsement">
+                        <a id="conditional-endorsement">Conditional Endorsement</a>
+                        <p class="p-main">
+                            <span> End<sup>o</sup>( P<sub>i</sub> | P<sub>j</sub> ) </span> is maximum degree of endorsement of <span>P<sub>j</sub></span> in an inferable base where <span>P<sub>j</sub></span> is 
+                            endorsed as well. If there is no inferable base that <span>P<sub>j</sub></span> is endorsed, then <span> End<sup>o</sup>( P<sub>i</sub> | P<sub>j</sub> ) </span> is undefined. 
+                        </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (28) <span> End<sup>o</sup>( P<sub>i</sub> | P<sub>j</sub> ) = max {End<sup>o</sup>( P<sub>i</sub> | H<sub>k</sub> )  | H<sub>k</sub> endorses P<sub>j</sub> }</span>
+                            </li>
+                        </ul>
+                        <p class="p-main">
+                            The 
+                            difference between this conditional and above conditionals, is that they are conditionals based on assuming, and in this case it is conditional based on reasoning and evidential
+                            support that agent has for a proposition on the given condition.
                             <span><sub></sub></span>
                         </p>
                     </section>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div id='Section- ' class='div-section'>
-                    <a id=" qqq "><b> . </b></a>
-                    <section id="section-">
-                        <a id="qwe">.</a>
+               <div id='Section-Reasons' class='div-section'>
+                    <a id="Reasons"><b>Reasons</b></a>
+                    <section id="section-various-kinds-of-reasons">
+                        <a id="various-kinds-of-reasons">various kinds of reasons</a>
                         <p class="p-main">
-                            <span><sub></sub></span>
+                            Reason is about agent's structure of endorsing various propositions. A proposition <span>P<sub>j</sub></span> is an epistemic constructor for <span>P<sub>i</sub></span>, if <span> P<sub>j</sub></span> is an
+                            element of the ground which gives the <span>P<sub>i</sub></span> a degree of endorsement, or if it contributes directly in an argument for <span>P<sub>i</sub></span>. Let <span>P<sub>j</sub> ⊳ P<sub>i</sub></span>
+                            be <span>P<sub>j</sub></span> constructs <span>P<sub>i</sub></span>, then  
                         </p>
+                        <ul class='ul-formula'>
+                            <li type="none">
+                                (29) <span> P<sub>j</sub> ⊳ P<sub>i</sub> ≡ ∃ S ∈ G<sub>i</sub><sup>H</sup> (P<sub>j</sub>∈ S)</span>
+                            </li>
+                        </ul>
+
+                        <p class="p-main">
+                            One can observe that there are four possible relationships between two propistions: <span>A. P<sub>j</sub> ⊳ P<sub>i</sub></span>, <span>B. P<sub>j</sub> ⊳ ¬P<sub>i</sub></span>,  
+                            <span>C. ¬P<sub>j</sub> ⊳ P<sub>i</sub></span>, <span>D. ¬P<sub>j</sub> ⊳ ¬P<sub>i</sub></span>. As they also could happens at the same time, there are 16 possible relationships
+                            between two propositions.                                                     
+                        </p>
+                        <p class="p-main">
+                            If a proposition <span>P<sub>i</sub></span></span> could be believed, disbelieved, suspended or unkown. If <span>P<sub>i</sub></span> is believed, then 
+                            <span>P<sub>j</sub></span> is a reason for believing <span>P<sub>i</sub></span>, if and only if, <span> P<sub>j</sub> ⊳ P<sub>i</sub></span>. If <span>P<sub>i</sub></span> is 
+                            disbelieved then <span>P<sub>j</sub></span> is a reason for disbelieving <span>P<sub>i</sub></span> if and only if <span>P<sub>j</sub></span> is a reason for 
+                            believing <span>¬P<sub>i</sub></span>. If <span>P<sub>i</sub></span> is suspended, then <span>P<sub>j</sub></span> is a reason for suspense of <span>P<sub>i</sub></span>, if 
+                            and only if, <span> P<sub>j</sub> ⊳ P<sub>i</sub></span> and <span> P<sub>j</sub> ⊳ ¬P<sub>i</sub></span>. 
+                        </p>
+                        <p class="p-main">
+                            If <span>Bel ( P<sub>i</sub> )</span> then <span>P<sub>j</sub></span> is a sufficient reason of believing, if and only if <span> ( ¬P<sub>j</sub> ⊳ P<sub>i</sub> )</span>. 
+                            If <span>Dis ( P<sub>i</sub> )</span> then <span>P<sub>j</sub></span> is a sufficient reason of dibelieving, if and only if it is sufficient reason for believing <span>¬P<sub>i</sub></span>.
+                            If <span>Sus ( P<sub>i</sub> )</span> then <span>P<sub>j</sub></span> is a sufficient reason of suspending, if and only if <span>( ¬P<sub>j</sub> ⊳ P<sub>i</sub> )</span> 
+                            and <span>( ¬P<sub>j</sub> ⊳ ¬P<sub>i</sub> )</span>.
+                        </p>
+                        <p class="p-main">
+                            The last step of the endorsement theory could be made by ther reader, and it is reasoning by assumining which is the combination of two last sections.
+                        </p>                       
                     </section>
+                </div>
+
+                <div id='Section-References' class='div-section'>
+                    <a id="References"><b>References</b></a>
+                    <p class="reference">Priest, G. 2001. Paraconsistent Belief revision, Theoria 67: PP. 214-228</p>
+                    <p class="reference">Shafer, G., 2008, Belief function and parametric models, P: 276 in Liu, L., Yager, R.R., 2008, Classic Works of the Dempster Shafer Theory of Belief Functions, Springer, p. 265-290</p>
+                    <p class="reference">Spohn, W. 2009, A survey of Ranking Theory, in Huber, F., and Schmidt-Petri, C., (editors), Degrees of Belief, Dordrecht, Springer</p>
+                    <p class="reference">Spohn, W. 2014. AGM, ranking theory, and the many ways to cope with examples. In David Makinson on Classical Methods for Non-Classical Problems (pp. 95-118). Springer Netherlands</p>
+                    <p class="reference">Spohn, W., 2012, The Laws of Belief, ranking theory and its applications, OUP</p>
                 </div>
 
             </div>
+
+            <span id="jump_to_this_location"></span>
+
         </div>
 
 
@@ -678,5 +735,6 @@
 
 </body>
 
+<script>window.location.hash = "jump_to_this_location";</script>
 
 </html>
