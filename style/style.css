@@ -4,7 +4,7 @@ align-items: center;}
 #div-paper {
     float: left;
     /* min-width: 600px; */
-    width: 60%;
+    width: 80%;
     /* margin-left: 30%;
     margin-right: 30%; */
 }
@@ -12,11 +12,11 @@ align-items: center;}
 
 #div-left {
     float: left;
-    min-width: 20%;
+    min-width: 10%;
 }
 #div-right {
     float: left;
-    min-width: 20%;
+    min-width: 10%;
 }
 
 #p-Dis {
@@ -64,6 +64,17 @@ a {
     font-family: serif;
 
 }
+.p-reference {
+        /* font-size: large; */
+        line-height: 2;
+        text-indent: .1em;
+        margin-top: 20px;
+        margin-left: 1px;
+        font-family: serif;
+        font-size: small;
+}
+
+
 
 .ul-formula {
     margin-top: 25px;
